@@ -1,11 +1,24 @@
-import React from "react";
+"use client";
+
+import React, { useEffect } from "react";
 import styles from "@css/NavBar.module.css";
 import Image from "next/image";
 import icon from "@images/icon.png";
 
 const NavBar = () => {
+    useEffect(() => {
+        const handler = () => {
+            let nav = document.querySelector(`.${styles.nav}`);
+
+            if (document.documentElement.scrollTop === 0)
+                nav.classList.remove(styles.scrolled);
+            else nav.classList.add(styles.scrolled);
+        };
+        window.addEventListener("scroll", handler);
+        return () => window.removeEventListener("scroll", handler);
+    }, []);
     return (
-        <div className={`${styles.nav} align-center`}>
+        <nav className={`${styles.nav} align-center`}>
             <a href="#">
                 <Image src={icon} width={50} height={50} alt="icon" />
             </a>
@@ -16,7 +29,7 @@ const NavBar = () => {
                 <span>Work with us</span>
             </span>
             <button>Download app</button>
-        </div>
+        </nav>
     );
 };
 

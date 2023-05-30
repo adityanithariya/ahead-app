@@ -1,0 +1,28 @@
+.section {
+    margin: 5vh 8vw;
+}
+
+.section > h2 {
+    margin: 50px 35px;
+    font-size: 40px;
+}
+
+.card {
+    height: 190px;
+    width: 300px;
+    padding: 20px 30px;
+    background-color: #ece8fb;
+    border-radius: 20px;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: space-around;
+    font-size: 14px;
+}
+
+.card > div:nth-child(2) {
+    font-weight: 700;
+}
+
+.card > div:nth-child(3) {
+    font-size: 13px;
+}

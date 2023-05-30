@@ -2,6 +2,53 @@
     margin: 10px 3vw;
     margin-top: 75px;
     background-color: #eeeafd;
-    height: 80vh;
+    height: 85vh;
     border-radius: 30px;
+    padding: 0 5vw;
+    width: auto;
+    overflow: hidden;
+}
+
+.hero > div {
+    width: 50%;
+    align-items: flex-start;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.heroLeft > div:first-child {
+    font-size: 13px;
+    font-weight: 500;
+}
+
+.hero > div:last-child {
+    width: 0%;
+    position: relative;
+}
+
+.hero > div:last-child > * {
+    position: absolute;
+}
+
+.heroLeft > div:nth-child(2) {
+    font-size: 60px;
+    font-weight: 700;
+    padding: 10px 0;
+    max-width: 13ch;
+}
+
+.appstore {
+    padding-top: 20px;
+    justify-content: space-between;
+    width: 50%;
+}
+
+.appstore > div {
+    flex-direction: column;
+    align-items: flex-start;
+    font-size: 12px;
+}
+
+.appstore > div img {
+    margin-right: 4px;
 }
