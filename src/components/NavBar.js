@@ -3,7 +3,7 @@
 import React, { useEffect } from "react";
 import styles from "@css/NavBar.module.css";
 import Image from "next/image";
-import icon from "@images/icon.png";
+import logo from "@images/logo.png";
 
 const NavBar = () => {
     useEffect(() => {
@@ -23,7 +23,7 @@ const NavBar = () => {
     return (
         <nav className={`${styles.nav} ${styles.scrolled} align-center`}>
             <a href="#">
-                <Image src={icon} width={50} height={50} alt="icon" />
+                <Image src={logo} width={50} height={50} alt="icon" />
             </a>
             <span className={`${styles.navLinks} align-center`}>
                 <span>Emotions</span>
