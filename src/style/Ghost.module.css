@@ -34,6 +34,10 @@
     z-index: 2;
 }
 
+.ghost > img {
+    margin-bottom: 10px;
+}
+
 .ghost.bordered {
     width: 6.6em;
     height: 6.5em;

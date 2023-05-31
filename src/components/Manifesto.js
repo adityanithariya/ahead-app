@@ -14,7 +14,7 @@ const Manifesto = () => {
                 <div className="align-center">
                     <Badge />
                     <div className={`${styles.ghostBox} align-center`}>
-                        <Ghost type={type.smile} />
+                        <Ghost type={type.smile} scale={1.3} />
                     </div>
                     <Circle
                         size={200}
@@ -26,15 +26,35 @@ const Manifesto = () => {
                         backgroundColor={"#f2c7c8"}
                         position={{ top: "19em", left: "24em" }}
                     />
-                    <Leaf position={{
-                        top: "-3.5em",
-                        left: "11em",
-                        rotate: "-20deg"
-                    }} />
+                    <Leaf
+                        position={{
+                            top: "-4.5em",
+                            left: "10em",
+                            rotate: "-20deg",
+                        }}
+                    />
+                    <Circle
+                        size={45}
+                        backgroundColor={"#ec685c"}
+                        position={{
+                            top: "24.5em",
+                            left: "20em",
+                            border: "15px solid #f6d3bd",
+                        }}
+                    />
                 </div>
             </div>
             <div className={`${styles.right} align-center`}>
-                <div></div>
+                <div>
+                    <Leaf
+                        position={{
+                            top: "-4em",
+                            left: "2em",
+                            rotate: "-20deg",
+                            scale: "1.3"
+                        }}
+                    />
+                </div>
                 <div className={`${styles.content} align-center`}>
                     <div>
                         A personalized pocket coach that provodes bite-sized,
@@ -52,4 +72,3 @@ const Manifesto = () => {
 };
 
 export default Manifesto;
-

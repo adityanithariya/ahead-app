@@ -4,27 +4,34 @@ const Leaf = ({ position }) => {
     return (
         <div
             style={{
-                width: "49px",
-                height: "30px",
-                overflow: "hidden",
                 position: "relative",
-                ...position
+                height: "15px",
+                ...position,
             }}
         >
             <div
                 style={{
-                    backgroundColor: "rgb(119, 197, 153)",
-                    width: "106px",
-                    height: "200px",
-                    borderRadius: "50%",
+                    width: "49px",
+                    height: "30px",
+                    overflow: "hidden",
                     position: "relative",
-                    left: "-31px",
-                    top: "20px",
+                    top: "-16px"
                 }}
-            ></div>
+            >
+                <div
+                    style={{
+                        backgroundColor: "rgb(119, 197, 153)",
+                        width: "106px",
+                        height: "200px",
+                        borderRadius: "50%",
+                        position: "relative",
+                        left: "-31px",
+                        top: "20px",
+                    }}
+                ></div>
+            </div>
         </div>
     );
 };
 
 export default Leaf;
-
