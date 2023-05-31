@@ -58,7 +58,7 @@
     margin-right: 4px;
 }
 
-.heroRight > div {
+.heroRight > div:nth-child(1) {
     height: 400px;
     width: 400px;
     border: 5px dashed white;
@@ -66,21 +66,29 @@
     margin-left: 55px;
 }
 
-.icons div:nth-child(8) {
-    top: -118px;
-    left: -400px;
+.floatDiv {
+    position: absolute;
+}
+
+.floatDiv > div {
+    position: relative;
+}
+
+.floatDiv > div:nth-child(1) {
+    top: -36px;
+    left: 230px;
     rotate: -10deg;
 }
 
-.icons div:nth-child(9) {
-    top: -40px;
-    left: -40px;
+.floatDiv > div:nth-child(2) {
+    top: 166px;
+    left: 410px;
     scale: 0.8 !important;
-    rotate: 13deg;
+    rotate: 346deg;
 }
 
-.icons div:nth-child(10) {
+.floatDiv > div:nth-child(3) {
     top: 160px;
-    left: -304px;
+    left: 90px;
     rotate: 14deg;
 }
