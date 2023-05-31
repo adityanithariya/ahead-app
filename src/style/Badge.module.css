@@ -1,0 +1,19 @@
+.badge {
+    position: relative;
+    width: fit-content;
+}
+
+.badge > div {
+    --size: 27px;
+    border-radius: 50%;
+    width: var(--size);
+    height: var(--size);
+    background-color: #d58e4d;
+    z-index: 1;
+    color: white;
+    font-size: 12px;
+}
+
+.badge img {
+    position: absolute;
+}

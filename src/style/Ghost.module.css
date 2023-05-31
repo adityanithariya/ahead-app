@@ -1,6 +1,4 @@
 .ghostBox {
-    position: relative;
-    left: -200px;
     flex-direction: column;
 }
 

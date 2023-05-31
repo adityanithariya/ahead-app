@@ -7,7 +7,7 @@ import Ghost, { type } from "@components/Ghost";
 
 const Hero = () => {
     return (
-        <div className={`${styles.hero} align-center`}>
+        <section className={`${styles.hero} align-center`}>
             <div className={`${styles.heroLeft} align-center`}>
                 <div>Ahead app</div>
                 <div>Master your life by mastering emotions</div>
@@ -38,7 +38,7 @@ const Hero = () => {
             <div>
                 <Ghost type={type.surprised} />
             </div>
-        </div>
+        </section>
     );
 };
 

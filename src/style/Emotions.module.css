@@ -17,8 +17,10 @@
 
 .cards::-webkit-scrollbar {
     height: 5px;
+    display: none;
 }
 
+/*
 .cards::-webkit-scrollbar-track {
     background: #b3a3f747;
 }
@@ -27,14 +29,12 @@
     background: #b3a3f7;
     border-radius: 5px;
 }
+*/
 
 .card {
     min-width: 300px;
     padding: 20px 30px;
     border-radius: 15px;
-    flex-direction: column;
-    align-items: flex-start;
-    justify-content: space-around;
     font-size: 13px;
     display: inline-block;
 }
@@ -48,4 +48,3 @@
     font-size: 12px;
     line-height: 19px;
 }
-
