@@ -2,8 +2,26 @@
     position: relative;
     left: -200px;
     flex-direction: column;
+}
+
+.ghostBox.happy {
     --primary: #e6a4cd;
     --dark: #dc72b1;
+}
+
+.ghostBox.smile {
+    --primary: #dbc1f2;
+    --dark: #cbaee1;
+}
+
+.ghostBox.angry {
+    --primary: #e87465;
+    --dark: #d15146;
+}
+
+.ghostBox.surprised {
+    --primary: #b2e5fb;
+    --dark: #7bc4ee;
 }
 
 .ghost {

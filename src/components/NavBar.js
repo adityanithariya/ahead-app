@@ -7,9 +7,12 @@ import icon from "@images/icon.png";
 
 const NavBar = () => {
     useEffect(() => {
-        const handler = () => {
-            let nav = document.querySelector(`.${styles.nav}`);
+        let nav = document.querySelector(`.${styles.nav}`);
 
+        // Initial check
+        if (document.documentElement.scrollTop === 0)
+            nav.classList.remove(styles.scrolled);
+        const handler = () => {
             if (document.documentElement.scrollTop === 0)
                 nav.classList.remove(styles.scrolled);
             else nav.classList.add(styles.scrolled);
@@ -18,7 +21,7 @@ const NavBar = () => {
         return () => window.removeEventListener("scroll", handler);
     }, []);
     return (
-        <nav className={`${styles.nav} align-center`}>
+        <nav className={`${styles.nav} ${styles.scrolled} align-center`}>
             <a href="#">
                 <Image src={icon} width={50} height={50} alt="icon" />
             </a>

@@ -3,7 +3,7 @@ import Image from "next/image";
 import styles from "@css/Hero.module.css";
 import appstore from "@images/Hero/appstore.svg";
 import star from "@images/Hero/star.svg";
-import Ghost from "@components/Ghost";
+import Ghost, { type } from "@components/Ghost";
 
 const Hero = () => {
     return (
@@ -20,12 +20,13 @@ const Hero = () => {
                     />
                     <div className="align-center">
                         <div className={styles.stars}>
-                            {[...Array(5).keys()].map(() => (
+                            {[...Array(5).keys()].map((e) => (
                                 <Image
                                     src={star}
                                     width={20}
                                     height={20}
                                     alt="star"
+                                    key={e}
                                 />
                             ))}
                         </div>
@@ -35,7 +36,7 @@ const Hero = () => {
             </div>
             <div></div>
             <div>
-                <Ghost />
+                <Ghost type={type.surprised} />
             </div>
         </div>
     );

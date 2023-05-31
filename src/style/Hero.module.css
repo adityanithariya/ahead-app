@@ -39,14 +39,15 @@
 
 .appstore {
     padding-top: 20px;
-    justify-content: space-between;
-    width: 50%;
+    justify-content: flex-start;
+    width: 100%;
 }
 
 .appstore > div {
     flex-direction: column;
     align-items: flex-start;
     font-size: 12px;
+    margin-left: 10%;
 }
 
 .appstore > div img {

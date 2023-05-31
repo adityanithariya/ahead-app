@@ -7,22 +7,45 @@
     font-size: 40px;
 }
 
+.cards {
+    gap: 30px;
+    overflow-x: auto;
+    height: 250px;
+    scroll-behavior: smooth;
+    padding-left: 75%;
+}
+
+.cards::-webkit-scrollbar {
+    height: 5px;
+}
+
+.cards::-webkit-scrollbar-track {
+    background: #b3a3f747;
+}
+
+.cards::-webkit-scrollbar-thumb {
+    background: #b3a3f7;
+    border-radius: 5px;
+}
+
 .card {
-    height: 190px;
-    width: 300px;
+    min-width: 300px;
     padding: 20px 30px;
-    background-color: #ece8fb;
-    border-radius: 20px;
+    border-radius: 15px;
     flex-direction: column;
     align-items: flex-start;
     justify-content: space-around;
-    font-size: 14px;
+    font-size: 13px;
+    display: inline-block;
 }
 
 .card > div:nth-child(2) {
     font-weight: 700;
+    margin: 10px 0;
 }
 
 .card > div:nth-child(3) {
-    font-size: 13px;
+    font-size: 12px;
+    line-height: 19px;
 }
+
