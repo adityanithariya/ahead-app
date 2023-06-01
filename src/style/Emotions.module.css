@@ -15,19 +15,6 @@
     justify-content: flex-start;
 }
 
-.cards::-webkit-scrollbar {
-    height: 5px;
-}
-
-.cards::-webkit-scrollbar-track {
-    background: #b3a3f747;
-}
-
-.cards::-webkit-scrollbar-thumb {
-    background: #b3a3f7;
-    border-radius: 5px;
-}
-
 .card {
     min-width: 300px;
     padding: 20px 30px;

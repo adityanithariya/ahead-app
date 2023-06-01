@@ -49,3 +49,17 @@ button {
 body::-webkit-scrollbar {
     display: none;
 }
+
+.wrapper::-webkit-scrollbar {
+    height: 5px;
+    width: 5px;
+}
+
+.wrapper::-webkit-scrollbar-track {
+    background: #b3a3f747;
+}
+
+.wrapper::-webkit-scrollbar-thumb {
+    background: #b3a3f7;
+    border-radius: 5px;
+}

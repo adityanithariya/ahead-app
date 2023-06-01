@@ -6,7 +6,7 @@ const Emotions = () => {
     return (
         <section className={styles.section}>
             <h2>Does this sound familiar...</h2>
-            <div className={`${styles.cards} align-center`}>
+            <div className={`${styles.cards} align-center wrapper`}>
                 <EmotionCards />
             </div>
         </section>
