@@ -13,10 +13,10 @@ const getType = (className, image) => {
     };
 };
 
-const Ghost = ({ type, scale }) => {
+const Ghost = ({ type, scale, id }) => {
     if (!type) type = getType(styles.smile, smile);
     return (
-        <div className={`${styles.ghostBox} align-center ${type.className}`} style={{scale: scale || 1}}>
+        <div id={id} className={`${styles.ghostBox} align-center ${type.className}`} style={{scale: scale || 1}}>
             <div className={`${styles.ghost} align-center`}>
                 <Image src={type.image} width={20} height={20} alt="smile" />
             </div>

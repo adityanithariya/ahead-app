@@ -63,3 +63,7 @@ body::-webkit-scrollbar {
     background: #b3a3f7;
     border-radius: 5px;
 }
+
+.w-500 {
+    font-weight: 500;
+}

@@ -1,12 +1,12 @@
 import React from "react";
-import styles from "@css/RateYou.module.css";
+import styles from "@css/RateMe.module.css";
 import Badge from "@ui/Badge";
 import Circle from "@ui/Circle";
 
 const RateMe = () => {
     return (
         <section className={`${styles.section} align-center`}>
-            <div>
+            <div className="w-500">
                 Let your friends, family, and co-workers (anonymously) rate your
                 social skills.
             </div>
